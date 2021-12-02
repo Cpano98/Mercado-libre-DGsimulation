@@ -27,6 +27,7 @@ ul{
 
 .fas{
     margin-right: 10px;
+
 }
 
 .fa-bars{
@@ -42,18 +43,18 @@ nav > img{
     max-width: 60%;
 }
 
-.Productos > h2, .Ofertas > h2{
+.Productos > h2, .Ofertas > h2, .contenedor_productos > h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: -8px;
     margin-top: 50px;
 }
 
-.Productos > p, .Ofertas > p{
+.Productos > p, .Ofertas > p, .contenedor_productos > p{
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2vw;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: -10px;
@@ -62,11 +63,18 @@ nav > img{
 .productos{
     text-align: center;
     background-color: #fff;
-    margin: 50px;
+    margin: 45px;
     padding: 20px;
     -webkit-box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.02); 
     box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.02);
     border-radius: 5px;
+}
+
+.productos:hover{
+    background-color: #fff;
+    -webkit-box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2); 
+    box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2);
+
 }
 
 .productos > h3{
@@ -112,6 +120,11 @@ nav > img{
     margin-bottom: -7px;
 }
 
+.btnP:hover{
+    background-color: #03264C;
+
+}
+
 footer{
     background-color: white;
     padding: 25px;
@@ -144,8 +157,11 @@ footer{
     display: flex;
     background-color: #dabd2d;
     border-radius: 5px;
-    align-content: center;
+    height: 20px;
+
+    align-items: center;
     padding: 10px;
+    width: 40vw;
 }
 
 .fa-search{
@@ -164,4 +180,108 @@ footer{
 #envio{
     color: #3db648;
     font-size: 8px;
+}
+
+
+.Productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.menuR{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuItem{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    
+}
+
+.menuItem > li{
+    margin-right: 20px;
+    
+}
+
+.icon-menu{
+    display: none;
+}
+
+a{
+    background-color: #03264C;
+    color: white;
+    text-decoration: underline #03264C;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+a:hover{
+    background-color: white;
+    color: #03264C;
+    text-decoration: underline white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.imgMercado{
+    max-width: 25%; 
+    margin-right: 50px;
+
+}
+
+
+
+
+
+@media (max-width:375px){
+    .Productos > h2, .Ofertas > h2, .contenedor_productos > h2{
+
+        font-size: 22px;
+    }
+    
+    .Productos > p, .Ofertas > p, .contenedor_productos > p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .menuR{
+        display: none;
+    }
+
+    .icon-menu{
+        display:contents;
+    }
+
+    #compraTarjeta{
+        display: none;
+    }
+    .imgMercado{
+        max-width: 70%; 
+        margin-right: 0px;
+    
+    }
+
+    .headerNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
 }
