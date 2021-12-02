@@ -26,6 +26,6 @@ app.get('/404', (req, res) => {
 });
 
 //Respuesta de nuestro servidor.
-app.listen(3000, () =>
-    console.log("Respuesta del servidor exitosa. Servidor arriba :D")
-);
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Respuesta del servidor exitosa. Servidor arriba :D");
+});
