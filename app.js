@@ -1,0 +1,21 @@
+//Levantamos servidor
+const express = require('express');
+const app = express();
+
+//Rutas absolutas
+app.use(express.static(__dirname + '/public'));
+
+//MainPage
+app.get('/', (req, res) =>{
+    res.sendFile(__dirname + '/views/home.html');
+});
+
+//Página de error
+app.get('/404', (req, res) => {
+    res.send("Error. La página solicitada no esta disponible"); 
+});
+
+//Respuesta de nuestro servidor.
+app.listen(3000, () =>
+    console.log("Respuesta del servidor exitosa. Servidor arriba :D")
+);
