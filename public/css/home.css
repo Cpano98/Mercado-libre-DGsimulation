@@ -74,7 +74,15 @@ nav > img{
     background-color: #fff;
     -webkit-box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2); 
     box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2);
+    animation: subida 1s infinite;
 
+}
+
+@keyframes subida{
+
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
 }
 
 .productos > h3{
@@ -118,11 +126,19 @@ nav > img{
     padding-right: 25px;
     border: transparent;
     margin-bottom: -7px;
+    
 }
 
 .btnP:hover{
     background-color: #03264C;
+    animation: grow 1s infinite;
 
+}
+
+@keyframes grow {
+    0%{transform: scale(1); opacity: 80%;}
+    50%{transform: scale(0.8); opacity: 100%;}
+    100%{transform: scale(1); opacity: 100%;}
 }
 
 footer{
@@ -247,8 +263,42 @@ a:hover{
 }
 
 
+.form-type{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
 
+.contenedor-form{
+    padding: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
+.input-label{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    border: transparent;
+    background-color: #ededed;
+    min-width: 90%;
+    padding: 10px;
+}
+
+.text-label{
+    margin-bottom: 10px;
+}
+
+.btn-form{
+    background-color: #03264C;
+    color: white;
+    text-decoration: underline #03264C;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: transparent;
+
+}
 
 @media (max-width:375px){
     .Productos > h2, .Ofertas > h2, .contenedor_productos > h2{
