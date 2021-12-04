@@ -74,7 +74,7 @@ nav > img{
     background-color: #fff;
     -webkit-box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2); 
     box-shadow: 1px 8px 13px 0px rgba(0,0,0,0.2);
-    animation: subida 1s infinite;
+    animation: subida 3s infinite;
 
 }
 
